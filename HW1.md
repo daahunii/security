@@ -11,3 +11,10 @@
 출처 : 시사저널(http://www.sisajournal.com)
 
 
+
+악성코드 (백도어 활용)
+
+<img width="380" alt="스크린샷 2021-07-15 오전 12 25 06" src="https://user-images.githubusercontent.com/86994067/125649237-38f83d4d-4171-4de1-897c-9558ea4f6d88.png">
+<img width="437" alt="스크린샷 2021-07-15 오전 12 25 13" src="https://user-images.githubusercontent.com/86994067/125649220-0e1998c7-c372-4137-8f78-8cb55b61f252.png">
+
+
