@@ -31,3 +31,27 @@ innocent 위치를 찾아서 해당 값을 KEY값으로 덮어 씌우면 되므�
 
 bof3 solution
 
+<img width="783" alt="스크린샷 2021-07-15 오후 4 37 32" src="https://user-images.githubusercontent.com/86994067/125748519-c1d48917-ea39-4984-a242-4264f1a9c9ea.png">
+bof3도 bof2처럼 동일하게 버퍼오버플로우를 걸어주면
+<img width="876" alt="스크린샷 2021-07-15 오후 4 36 36" src="https://user-images.githubusercontent.com/86994067/125748627-6d84cfbc-5cf3-4c45-ad54-3f4c69e2093b.png">
+
+bof4의 패스워드를 얻을 수 있다. (단, bof3에서는 main함수에서 인자를 받는 것이 아니기 때문에 (python -c "print 'x'*140 + '키값'";cat) | ./bof 꼴로 innocent를 덮어준다)
+
+
+
+
+
+bof4 solution
+
+<img width="691" alt="스크린샷 2021-07-15 오후 4 57 48" src="https://user-images.githubusercontent.com/86994067/125751315-f729d35c-4592-4d41-8468-7240b29edc43.png">
+
+bof2, bof3과 같은 형태로 풀어준다.
+
+<img width="943" alt="스크린샷 2021-07-15 오후 4 59 24" src="https://user-images.githubusercontent.com/86994067/125751485-41845b33-ae3a-401c-9683-aff8ce6ba105.png">
+
+140만큼 아무 문자인 'x'를 채우고 그 뒤에 KEY값을 입력해준다
+이때, little endian 방식으로 \x78\x56\x34\x12와 같이 입력한다
+또한, bof3과 달리 인자를 전달해주어야 하므로 ./bof4 python -c "print 'x' * 140 + '\x78\x56\x34\x12'"를 입력하는 것을 주의한다. (bof2와 동일하게!)
+
+
+
