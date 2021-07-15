@@ -1,20 +1,27 @@
 # security
 
-유명 인사들의 트위터 해킹 사건
+bof2 solution
 
-유명 인사들의 트위터 계정이 대거 해킹당하는 초유의 사건이 발생했다. 버락 오바마 전 미국 대통령과 미국 민주당의 대선후보 조 바이든 전 부통령, 빌 게이츠 마이크로소프트(MS) 창업자 등도 피해를 입었다. 전세계 유명 정치인과 기업인을 대상으로 한 동시다발적인 해킹이 확인되면서 큰 파장이 예상된다. 
+<img width="850" alt="스크린샷 2021-07-15 오후 4 02 04" src="https://user-images.githubusercontent.com/86994067/125743853-8a123dc7-c393-4dca-86c6-12b5d28f0060.png">
+docker run -it ccss17/bof 명령어를 통해 bof 문제가 있는 컨테이너에 접속하여
+이전 bof1에서 얻은 bof2의 패스워드를 입력하여 bof2에 접속한다.
 
-15일(현지 시각) CNN방송과 AP통신 등 주요 외신에 따르면, 오바마 전 대통령을 비롯한 유명인사 계정이 정체불명의 해커에게 뚫렸다. 해킹된 인사들의 트위터에는 '1000달러(약 120만원)를 비트코인으로 보내면 30분 안에 돈을 두 배로 돌려주겠다'는 사기글이 올라왔다가 삭제됐다.
+<img width="614" alt="스크린샷 2021-07-15 오후 4 10 41" src="https://user-images.githubusercontent.com/86994067/125744972-232ccf87-f4d2-4096-8ef9-7394e7846138.png">
 
-현재까지 파악된 피해 계정에는 일론 머스크 테슬라 최고경영자(CEO), 제프 베이조스 아마존 CEO, 마이클 블룸버그 전 뉴욕시장, 워런 버핏 버크셔해서웨이 회장, 래퍼 카녜이 웨스트와 그의 부인 킴 카다시안도 포함됐다.
+if(innocent == KEY)를 만족하면 system("/bin/sh");를 사용할 수 있으므로
+<img width="890" alt="스크린샷 2021-07-15 오후 2 35 34" src="https://user-images.githubusercontent.com/86994067/125745306-238d6a0d-6dab-40c9-a434-cf7a1a827384.png">
+cmp 명령어에서 innocnet와 KEY를 비교하는 것을 확인!
+rbp-0x4가 innocent, 0x61616161이 KEY값
+innocent 위치를 찾아서 해당 값을 KEY값으로 덮어 씌우면 되므로
+<img width="895" alt="스크린샷 2021-07-15 오후 2 35 57" src="https://user-images.githubusercontent.com/86994067/125746300-2d6a0c99-b9e9-4bad-9e8d-6733971667ad.png">
+시작 주소를 찾은 뒤 브레이크를 걸고 run을 시켜 두 값의 거리를 구한다.
 
-출처 : 시사저널(http://www.sisajournal.com)
+
+최종적으로 두 값의 거리가 140인 것을 확인하고 쓰레기 값을 140개 채워준 뒤 키값은 0x61616161이므로 'aaaa'를 써준다.
+(이때 main함수에서 인자를 입력 받으므로 ./bof `python -c "print 'a'*140 + 'xxxx'"` 이러한 꼴로 입력!)
+<img width="896" alt="스크린샷 2021-07-15 오후 3 10 38" src="https://user-images.githubusercontent.com/86994067/125746748-3b24ea61-f698-4834-ba0d-e6990e94ddd8.png">
+이렇게 최종적으로 bof3의 패스워드를 얻을 수 있다.
 
 
-
-악성코드 (백도어 활용)
-
-<img width="380" alt="스크린샷 2021-07-15 오전 12 25 06" src="https://user-images.githubusercontent.com/86994067/125649237-38f83d4d-4171-4de1-897c-9558ea4f6d88.png">
-<img width="437" alt="스크린샷 2021-07-15 오전 12 25 13" src="https://user-images.githubusercontent.com/86994067/125649220-0e1998c7-c372-4137-8f78-8cb55b61f252.png">
-
+bof3 solution
 
