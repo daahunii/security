@@ -1,6 +1,6 @@
 # security
 
-bof2 solution
+## bof2 solution
 
 <img width="850" alt="스크린샷 2021-07-15 오후 4 02 04" src="https://user-images.githubusercontent.com/86994067/125743853-8a123dc7-c393-4dca-86c6-12b5d28f0060.png">
 docker run -it ccss17/bof 명령어를 통해 bof 문제가 있는 컨테이너에 접속하여
@@ -29,7 +29,7 @@ innocent 위치를 찾아서 해당 값을 KEY값으로 덮어 씌우면 되므�
 
 
 
-bof3 solution
+## bof3 solution
 
 <img width="783" alt="스크린샷 2021-07-15 오후 4 37 32" src="https://user-images.githubusercontent.com/86994067/125748519-c1d48917-ea39-4984-a242-4264f1a9c9ea.png">
 bof3도 bof2처럼 동일하게 버퍼오버플로우를 걸어주면
@@ -41,7 +41,7 @@ bof4의 패스워드를 얻을 수 있다. (단, bof3에서는 main함수에서 
 
 
 
-bof4 solution
+## bof4 solution
 
 <img width="691" alt="스크린샷 2021-07-15 오후 4 57 48" src="https://user-images.githubusercontent.com/86994067/125751315-f729d35c-4592-4d41-8468-7240b29edc43.png">
 
