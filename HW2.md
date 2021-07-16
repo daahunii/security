@@ -21,7 +21,27 @@ system 함수에서 buf인자를 받은 형태인 것을 감안하여
 
 
 
-
 bof6 solution
+
+bat 명령어를 통해 bof6.c의 구성을 확인해보면
+<img width="954" alt="스크린샷 2021-07-16 오전 11 44 41" src="https://user-images.githubusercontent.com/86994067/125883821-6b60ef73-c434-40bc-9542-75f03b037775.png">
+
+buf 사이즈가 128이고 64비트에서 SFP는 8바이트를 덮어줘야 하므로 buf와 return address까지의 거리가 136임을 알 수 있다.
+
+<img width="1048" alt="스크린샷 2021-07-16 오전 11 43 15" src="https://user-images.githubusercontent.com/86994067/125887398-ec55459f-8577-40e0-97f3-f92908a4c4f7.png">
+
+그 뒤에 쉘 코드 주소값을 덮어줄 때, ASLR이 적용되어 쉘 코드 주소값이 계속 바뀌는 문제가 있었는데
+docker run -it --privileged ccss17/bof로 접속함으로써 해결할 수 있었다
+
+
+
+bof7 solution
+
+
+
+
+
+
+
 
 
