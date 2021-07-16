@@ -1,4 +1,4 @@
-bof5 solution
+## bof5 solution
 
 이전 bof 문제들과 마찬가지로 bof4에서 얻은 패스워드로 bof5 유저로 접속한 뒤
 bat bof5.c 명령어를 통해 bof5.c 파일의 구성을 보면
@@ -21,7 +21,7 @@ system 함수에서 buf인자를 받은 형태인 것을 감안하여
 
 
 
-bof6 solution
+## bof6 solution
 
 bat 명령어를 통해 bof6.c의 구성을 확인해보면
 <img width="954" alt="스크린샷 2021-07-16 오전 11 44 41" src="https://user-images.githubusercontent.com/86994067/125883821-6b60ef73-c434-40bc-9542-75f03b037775.png">
@@ -35,7 +35,7 @@ docker run -it --privileged ccss17/bof로 접속함으로써 해결할 수 있�
 
 
 
-bof7 solution
+## bof7 solution
 
 
 
