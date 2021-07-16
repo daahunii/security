@@ -18,8 +18,7 @@ system 함수에서 buf인자를 받은 형태인 것을 감안하여
 다음 명령어를 통해서 '/bin/sh\x00'을 추가하고 little endian 방식의 \x78\x56\x34\x12 키값을
 넣어주어야 한다.
 
-
-
+<br>
 
 ## bof6 solution
 
@@ -33,7 +32,7 @@ buf 사이즈가 128이고 64비트에서 SFP는 8바이트를 덮어줘야 하�
 그 뒤에 쉘 코드 주소값을 덮어줄 때, ASLR이 적용되어 쉘 코드 주소값이 계속 바뀌는 문제가 있었는데
 docker run -it --privileged ccss17/bof로 접속함으로써 해결할 수 있었다
 
-
+<br>
 
 ## bof7 solution
 
