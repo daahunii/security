@@ -1,4 +1,4 @@
-## bof8 solution
+## ⚜️bof8 solution⚜️
 bof8.c의 구성을 살펴보면
 <img width="1045" alt="스크린샷 2021-07-16 오후 3 47 01" src="https://user-images.githubusercontent.com/86994067/125922359-211ba701-a211-4ae9-9446-bdb7cff212a0.png">
 
@@ -26,6 +26,15 @@ vuln 함수에서 ret이 수행될 수 있도록 만든다.
 <img width="892" alt="스크린샷 2021-07-17 오후 4 11 39" src="https://user-images.githubusercontent.com/86994067/126029540-7ce7da86-5cfd-454f-b245-e99384c6f160.png">
 
 bof9의 패스워드를 얻을 수 있다.
+
+<br>
+
+## ⚜️bof9 solution⚜️
+-> 생략
+
+<br>
+
+## ⚜️bof10 solution⚜️
 
 
 
