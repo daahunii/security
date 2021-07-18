@@ -36,5 +36,6 @@ bof9의 패스워드를 얻을 수 있다.
 
 ## ⚜️bof10 solution⚜️
 
+<img width="598" alt="스크린샷 2021-07-17 오후 11 55 11" src="https://user-images.githubusercontent.com/86994067/126040996-6940d1dc-aeb4-4ce7-8143-a12bba84238a.png">
 
 
