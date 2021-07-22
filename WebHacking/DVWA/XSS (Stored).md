@@ -11,6 +11,16 @@
 
 Persistent XSS로 가장 많이 공격이 되는 곳은 게시판이며, 굳이 게시판이 아니더라도 사용자가 입력한 값이 데이터베이스에 저장이 되고, 저장된 값이 그대로 프론트엔드 단에 보여주는 곳에 공격이 성공할 가능성이 큽니다. XSS공격도 마찬가지로 사용자의 입력에 대한 검증이 없기 때문에 발생합니다.
 
+#### 공격구문 예시
+```
+<script>alert('XSS TEST')</script>
+<SCRIPT>alert('XSS TEST')</SCRIPT>
+<img src="" onerror="alert('XSS TEST')">
+<script>alert(document.cookie)</script>
+<img src=javascript:alert(“XSS alert!”)>
+```
+
+
 <br>
 
 ---
@@ -34,10 +44,24 @@ Persistent XSS로 가장 많이 공격이 되는 곳은 게시판이며, 굳이 
 겉보기엔 Low단계와 같아보이지만 스크립트문을 작성해서 넣어보면 먹히지 않는 것을 볼 수 있다.
 <img width="711" alt="스크린샷 2021-07-22 오후 4 54 22" src="https://user-images.githubusercontent.com/86994067/126606946-b7f9c4d3-ef82-48c3-b875-35ed2365081a.png">
 
+이번엔 이미지 태그문을 활용한 XSS 공격을 시도해보았다. 다음 명령문을 삽입해주면
+`<img src="#" onerror="alert('XSS TEST')">`
 
+<img width="700" alt="스크린샷 2021-07-22 오후 5 57 09" src="https://user-images.githubusercontent.com/86994067/126614086-0fe7c82e-c0ae-421b-9a71-287aaa1bbf78.png">
+
+<img width="351" alt="스크린샷 2021-07-22 오후 5 57 35" src="https://user-images.githubusercontent.com/86994067/126614168-d16c744b-219c-4749-9601-1c519aa072d3.png">
+스크립트문을 적었을 때와 달리 이미지태그를 넣어서 그런지 Message 부분에는 아무것도 없음을 확인할 수 있다.
 
 
 <br>
 
 # High Level
+
+
+
+
+
+
+
+
 
