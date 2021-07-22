@@ -19,6 +19,7 @@ Persistent XSS로 가장 많이 공격이 되는 곳은 게시판이며, 굳이 
 <script>alert(document.cookie)</script>
 <img src=javascript:alert(“XSS alert!”)>
 ```
+그외에 공격구문 : https://owasp.org/www-community/xss-filter-evasion-cheatsheet
 
 
 <br>
