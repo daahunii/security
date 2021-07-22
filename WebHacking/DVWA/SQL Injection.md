@@ -62,11 +62,21 @@ abc123’ and ASCII(SUBSTR(SELECT name From information_schema.tables WHERE tabl
 
 # Low Level
 
+1~5까지 넣어보면 각각 아이디에 저장된 데이터베이스 정보를 확인할 수 있다.
+
+<img width="716" alt="스크린샷 2021-07-22 오후 3 10 12" src="https://user-images.githubusercontent.com/86994067/126596454-d09abf98-e92c-4896-9d81-569e8384c8d8.png">
+
+이때 다음과 같은 명령어 `‘ OR 1=1 --`로 논리적 에러를 이용한 SQL Injection 공격을 시도하면 (- 대신 #을 이용해서 뒷내용을 주석처리 해준다.)
+<img width="707" alt="스크린샷 2021-07-22 오후 3 11 15" src="https://user-images.githubusercontent.com/86994067/126596676-5c8e318a-6a7e-433a-92b3-d62bc8859f1e.png">
+
+데이터베이스 내에 정보들이 출력되면서 정보를 확인할 수 있다.
 
 
 <br>
 
 # Medium Level
+
+
 
 
 <br>
