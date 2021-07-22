@@ -20,12 +20,20 @@ Persistent XSS로 가장 많이 공격이 되는 곳은 게시판이며, 굳이 
 사이트의 구성을 보면 이름과 게시글을 올릴 수 있는 공간이 있다. (게시글을 올리면 아래쪽에 올라오는 방식)
 <img width="711" alt="스크린샷 2021-07-22 오후 3 50 01" src="https://user-images.githubusercontent.com/86994067/126599997-84e93762-4094-41dd-961a-e849d3c0d429.png">
 
+게시글에다가 다음 ```<script>alert("XSS")</script>``` 스크립트문을 넣어 공격할 수 있다.
+<img width="705" alt="스크린샷 2021-07-22 오후 4 40 54" src="https://user-images.githubusercontent.com/86994067/126605099-11732c99-5709-4fe9-b144-e3d3f8ebf14d.png">
 
+<img width="653" alt="스크린샷 2021-07-22 오후 4 41 11" src="https://user-images.githubusercontent.com/86994067/126605110-717cc441-3f3f-48b1-83be-c6832fa7d776.png">
+공격에 성공하면 다음과 같은 팝업창이 뜬다.
 
 
 <br>
 
 # Medium Level
+
+
+
+
 
 <br>
 
