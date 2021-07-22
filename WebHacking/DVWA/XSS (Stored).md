@@ -57,10 +57,13 @@ Persistent XSS로 가장 많이 공격이 되는 곳은 게시판이며, 굳이 
 
 # High Level
 
+Higt 단계에도 스크립트문을 작성해 넣으면 통하지 않는 것을 확인할 수 있다.
+<img width="710" alt="스크린샷 2021-07-22 오후 6 04 20" src="https://user-images.githubusercontent.com/86994067/126614831-b58a9e07-53c0-4189-8b3d-b8b360b8f66c.png">
 
+그렇다면 Medium 단계에서처럼 태그문을 활용한 XSS 공격을 시도해주면
+<img width="699" alt="스크린샷 2021-07-22 오후 6 06 41" src="https://user-images.githubusercontent.com/86994067/126615036-c867c104-9e13-480d-84cd-51f472e1d3a4.png">
 
-
-
+이전 단계처럼 Message 부분이 비어있는채로 게시되는 것을 확인할 수 있다.
 
 
 
