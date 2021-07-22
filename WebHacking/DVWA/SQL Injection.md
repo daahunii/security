@@ -78,14 +78,26 @@ abc123’ and ASCII(SUBSTR(SELECT name From information_schema.tables WHERE tabl
 # Medium Level
 
 Low 단계일 때와 달리 목록을 선택하여 1~5까지의 데이터베이스 정보를 확인할 수 있다.
+아까와 달리 SQL문을 주입할 곳이 보이지 않는다.
 
 <img width="710" alt="스크린샷 2021-07-22 오후 3 24 55" src="https://user-images.githubusercontent.com/86994067/126597791-138964c6-772c-4e2e-9429-5b7e14ba01be.png">
 
+개발자 도구를 켜서 해당 소스코드를 확인해본다.
+<img width="1440" alt="스크린샷 2021-07-22 오후 3 33 52" src="https://user-images.githubusercontent.com/86994067/126598594-fedd67b7-0837-4280-aeda-f2460bc5c6d0.png">
 
 
+소스코드에서 value 값에 `1 OR 1=1`이라는 코드를 삽입해 SQL Injection을 시도해보면
+<img width="1440" alt="스크린샷 2021-07-22 오후 3 37 03" src="https://user-images.githubusercontent.com/86994067/126598739-6e41b2c5-e404-4067-8cf3-0d50267728bb.png">
+
+다음과 같이 데이터베이스의 내용들이 출력되면서 해킹에 성공한 것을 확인할 수 있다.
 
 
 <br>
 
 # High Level
+
+
+
+
+
 
