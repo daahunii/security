@@ -17,6 +17,10 @@ Persistent XSS로 가장 많이 공격이 되는 곳은 게시판이며, 굳이 
 
 # Low Level
 
+사이트의 구성을 보면 이름과 게시글을 올릴 수 있는 공간이 있다. (게시글을 올리면 아래쪽에 올라오는 방식)
+<img width="711" alt="스크린샷 2021-07-22 오후 3 50 01" src="https://user-images.githubusercontent.com/86994067/126599997-84e93762-4094-41dd-961a-e849d3c0d429.png">
+
+
 
 
 <br>
