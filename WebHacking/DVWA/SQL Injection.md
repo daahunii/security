@@ -99,7 +99,7 @@ Low 단계일 때와 달리 목록을 선택하여 1~5까지의 데이터베이�
 이번 High에서는 하이퍼링크를 클릭하여 다른 페이지에서 입력받아 출력하는 형태이다.
 <img width="703" alt="스크린샷 2021-07-22 오후 5 23 00" src="https://user-images.githubusercontent.com/86994067/126609840-c9735ef5-f7e9-4c93-acd2-5b5b7bfd3ccb.png">
 
-여기서도 이전 단계와 마찬가지로 TRUE로 바꿔주는 SQL문을 삽입하여주면
+여기서도 이전 단계와 마찬가지로 TRUE로 반환시켜주는 SQL문을 삽입해주면
 
 <img width="311" alt="스크린샷 2021-07-22 오후 5 21 47" src="https://user-images.githubusercontent.com/86994067/126610046-64b7ec54-99e2-41de-b07f-6d2833b5562e.png">
 
