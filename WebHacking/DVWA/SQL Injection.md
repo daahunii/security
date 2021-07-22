@@ -77,6 +77,10 @@ abc123’ and ASCII(SUBSTR(SELECT name From information_schema.tables WHERE tabl
 
 # Medium Level
 
+Low 단계일 때와 달리 목록을 선택하여 1~5까지의 데이터베이스 정보를 확인할 수 있다.
+
+<img width="710" alt="스크린샷 2021-07-22 오후 3 24 55" src="https://user-images.githubusercontent.com/86994067/126597791-138964c6-772c-4e2e-9429-5b7e14ba01be.png">
+
 
 
 
