@@ -31,6 +31,8 @@ Persistent XSS로 가장 많이 공격이 되는 곳은 게시판이며, 굳이 
 
 # Medium Level
 
+겉보기엔 Low단계와 같아보이지만 스크립트문을 작성해서 넣어보면 먹히지 않는 것을 볼 수 있다.
+<img width="711" alt="스크린샷 2021-07-22 오후 4 54 22" src="https://user-images.githubusercontent.com/86994067/126606946-b7f9c4d3-ef82-48c3-b875-35ed2365081a.png">
 
 
 
