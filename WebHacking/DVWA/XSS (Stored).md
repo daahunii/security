@@ -53,6 +53,21 @@ Persistent XSS로 가장 많이 공격이 되는 곳은 게시판이며, 굳이 
 <img width="351" alt="스크린샷 2021-07-22 오후 5 57 35" src="https://user-images.githubusercontent.com/86994067/126614168-d16c744b-219c-4749-9601-1c519aa072d3.png">
 스크립트문을 적었을 때와 달리 이미지태그를 넣어서 그런지 Message 부분에는 아무것도 없음을 확인할 수 있다.
 
+(해킹된 것이 아니라고 해서 아래와 같이 다른 방식으로 다시 접근해보았다...)
+
+<br>
+
+해당하는 페이지의 php 코드를 살펴보면
+
+<img width="1440" alt="스크린샷 2021-07-23 오후 1 24 31" src="https://user-images.githubusercontent.com/86994067/126737257-8a8296a1-d0fd-48ce-a9c3-9f49f8afa881.png">
+input 부분에서 <script>가 걸러지는 것을 확인할 수 있다.
+
+따라서 다음과 같이 대소문자를 바꾸어 스크립트문을 삽입하면
+<img width="701" alt="스크린샷 2021-07-23 오후 1 27 14" src="https://user-images.githubusercontent.com/86994067/126737429-827fc438-0470-4778-a26d-985c5b54b2dc.png">
+<img width="907" alt="스크린샷 2021-07-23 오후 1 29 26" src="https://user-images.githubusercontent.com/86994067/126737543-2470577b-6491-4afb-b1ff-77cb782cc41f.png">
+
+팝업창이 뜨면서 해킹에 성공한 것을 확인할 수 있었다.
+
 
 <br>
 
