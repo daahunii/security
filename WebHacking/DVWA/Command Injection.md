@@ -16,6 +16,17 @@
 
 # Low Level
 
+페이지를 살펴보면 IP주소를 입력받는 창이 있다. (IP 주소를 통해 ping 테스트를 하는 페이지인 것 같다.)
+<img width="705" alt="스크린샷 2021-07-23 오후 3 36 17" src="https://user-images.githubusercontent.com/86994067/126745830-17fd9749-ae13-40e7-a024-46a8002b606a.png">
+
+IP 주소 입력란에 ```; ls``` 다음과 같이 세미콜론 뒤 리눅스 명령어를 치면 디렉토리 내용을 추출할 수 있다.
+<img width="706" alt="스크린샷 2021-07-23 오후 3 55 02" src="https://user-images.githubusercontent.com/86994067/126747217-918066d5-23c2-47c8-88b2-479412b859a5.png">
+
+```; cat /etc/passwd```를 입력하면 호스트 사용자 목록이 출력되는 것을 확인할 수 있다.
+<img width="696" alt="스크린샷 2021-07-23 오후 4 02 16" src="https://user-images.githubusercontent.com/86994067/126747908-fe39a49d-eaf2-47c7-a22c-6936b6507974.png">
+
+마지막으로 ```; id```를 통해 root 권한을 획득할 수도 있다.
+<img width="1032" alt="스크린샷 2021-07-23 오후 4 04 24" src="https://user-images.githubusercontent.com/86994067/126748057-a5aad9b3-d45b-42f2-852f-e8f6f20bddf1.png">
 
 
 <br>
