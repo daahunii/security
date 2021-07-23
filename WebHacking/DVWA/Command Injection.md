@@ -51,11 +51,21 @@ php 코드를 확인해보면
 
 # High Level
 
+High 단계에서는 ```& ls```를 쳐보니 Medium 단계보다 더 검열이 심해졌음을 알 수 있다.
 
+php 코드를 확인해보면
 
+<img width="1081" alt="스크린샷 2021-07-23 오후 4 29 03" src="https://user-images.githubusercontent.com/86994067/126750295-cd95b567-1078-48e4-b76d-d3aa4fe70a0c.png">
 
+``` &, ;, |, -, $, (, ), `, ||```가 검열되고 있음을 확인할 수 있다.
 
+하지만 여기서 취약점은 "| " 다음 문자열에서 공백이 존재한다는 점...! (공백을 제외하고 붙여쓴다면...?)
+<img width="684" alt="스크린샷 2021-07-23 오후 4 33 21" src="https://user-images.githubusercontent.com/86994067/126750769-b79c2118-8714-482d-98ea-282bcbf6393a.png">
 
+붙여서 cat 명령어를 사용하니 뚫리는 것을 확인할 수 있다.
+
+또 다음과 같이 "|(|" 명령어를 통해 우회하여 커맨드 인젝션 공격이 가능했다.
+<img width="1033" alt="스크린샷 2021-07-23 오후 4 35 20" src="https://user-images.githubusercontent.com/86994067/126751076-08190d0e-0e47-4af1-8b08-fc8b55bcabc7.png">
 
 
 
