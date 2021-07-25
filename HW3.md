@@ -39,3 +39,17 @@ bof9의 패스워드를 얻을 수 있다.
 <img width="598" alt="스크린샷 2021-07-17 오후 11 55 11" src="https://user-images.githubusercontent.com/86994067/126040996-6940d1dc-aeb4-4ce7-8143-a12bba84238a.png">
 
 
+
+
+
+
+*Bof password*
+- Bof10 pw : d475db45
+- Bof9 pw : 4191ae56
+- Bof8 pw : 0dc54105
+- Bof7 pw : ffa35d7ec
+- Bof6 pw : b35aad61
+- Bof5 pw : c75cfe84
+- Bof4 pw : 64869b0d
+- Bof3 pw : 78ac9531ls
+- Bof2 pw : e31a76fc
